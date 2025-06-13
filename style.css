@@ -1,0 +1,394 @@
+/* Base */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+html, body {
+  height: 100%;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #111111;
+}
+
+/* Sidebar */
+.profile-bar {
+  width: 300px;
+  background-color: #1c1c1e;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px 0px 0px 20px;
+  flex-shrink: 0;
+}
+
+.profile-bar-profile {
+  text-align: center;
+}
+
+.profile-bar-profile img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.profile-bar-profile h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0px;
+  color: #ffffff;
+}
+
+.profile-bar-profile h3 {
+  background-color: #2d2d2f;
+  padding: 6px 16px;
+  border-radius: 10px;
+  font-size: 14.4px;
+  color: #bbbbbb;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+/* Contact Section */
+.profile-bar-contact {
+  width: 100%;
+  margin-top: 32px;
+  border-top: 1px solid #333333;
+  padding-top: 24px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.contact-list-div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.contact-list-div div:first-child {
+  font-size: 22.4px;
+}
+
+.contact-list-div p {
+  margin: 0px;
+  line-height: 1.3;
+}
+
+.contact-list-div p:first-child {
+  color: #999999;
+  font-size: 13.6px;
+}
+
+.contact-list-div p:last-child {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15.2px;
+}
+
+/* Social Icons */
+.profile-bar-icons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-bar-icons a {
+  color: #bbbbbb;
+  text-decoration: none;
+  background-color: #2d2d2f;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13.6px;
+  transition: background 0.3s;
+}
+
+.profile-bar-icons a:hover {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+/* Main Content */
+.main-content {
+  background-color: #1c1c1e;
+  color: #ffffff;
+  padding: 32px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 1000px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.nav-bar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-bar a:hover,
+.nav-bar a:focus {
+  color: #facc15;
+}
+
+/* Resume Section */
+.resume-section {
+  color: white;
+}
+
+.resume-section h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Education Section */
+.education-container {
+  margin-top: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.edu-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.edu-timeline {
+  list-style: none;
+  padding-left: 1.5rem;
+  border-left: 3px solid #facc15;
+  margin: 2rem 0;
+}
+
+.edu-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+.edu-content h4 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.edu-content p {
+  margin: 4px 0;
+}
+
+.timeline-dot {
+  width: 10px;
+  height: 10px;
+  background: #facc15;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  display: inline-block;
+  position: absolute;
+  left: -12px;
+  top: 0.6rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px 0px;
+}
+
+.card {
+  display: flex;
+  background: #1e1e1e;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3);
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.card-icon {
+  font-size: 32px;
+  color: #facc15;
+  flex-shrink: 0;
+}
+
+.card-text h3 {
+  color: #ffffff;
+  margin: 0px;
+  font-size: 18px;
+}
+
+.card-text p {
+  color: #b0b0b0;
+  margin: 4px 0px 0px;
+  font-size: 14px;
+}
+
+/* Certificate */
+
+.certi-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.certi-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.certi-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.certi-col {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #222;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certi-col:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.certi-content h4 {
+  margin: 0 0 4px;
+  color: #ffffff;
+}
+
+.certi-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #facc15;
+}
+
+/* Skill Row */
+.skill-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* Portfolio*/
+.portfolio-section {
+  padding: 40px 20px;
+  background-color: #222;
+}
+
+.portfolio-section h2 {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #f9fafb;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(31, 41, 55, 0.75); 
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  padding: 20px;
+  text-align: center;
+}
+
+.overlay h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.overlay p {
+  font-size: 0.9rem;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
